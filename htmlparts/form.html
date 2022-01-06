@@ -1,0 +1,183 @@
+<nav class="nav" id="nav">
+    <ul class="nav-tabs">
+        <li class="nav-item">
+            <p class="nav-link active" id="personal" onclick="getElementClick()">Personal Data</p>
+        </li>
+        <li class="nav-item nav-link">
+            <p class="nav-link" id="family" onclick="getElementClick()">Family Data</p>
+        </li>
+        <li class="nav-item nav-link">
+            <p class="nav-link" id="professional" onclick="getElementClick()">Professional Data</p>
+        </li>
+    </ul>
+</nav>
+<form>
+    <fieldset class="form-group container-personal" id="containerPersonal">
+        <legend>Personal Data</legend>
+            <label>
+                Cpf:
+                <input type="text" name="inputCpf" class="form-control input" onkeydown="formatCpf()">
+            </label>
+            <label>
+                RG:
+                <input type="text" name="inputRg" class="form-control input">
+            </label>
+            <label>
+                Dispatching Agency:
+                <input type="text" name="inputOrg" class="form-control input">
+            </label>
+            <label>
+                Naturality:
+                <input type="text" name="inputNaturality" class="form-control input">
+            </label>
+            <label>
+                Sus Card Number:
+                <input type="text" name="inputSusCard" class="form-control input">
+            </label>
+            <label>
+                Blood Type:
+                <input type="text" name="inputBloodType" class="form-control input">
+            </label>
+            <label>
+                Come Card:
+                <input type="text" name="inputComeCard" class="form-control input">
+            </label>
+            <label>
+                Civil State:
+                <input type="text" name="inputCivilState" class="form-control input">
+            </label>
+            <label>
+                First Personal Email:
+                <input type="text" name="inputFirstPersonalEmail" class="form-control input">
+            </label>
+            <label>
+                Second Personal Email:
+                <input type="text" name="inputSecondPersonalEmail" class="form-control input">
+            </label>
+            <label>
+                Cell Phone Number:
+                <input type="text" name="inputCellPhoneNumber" onkeydown="formatPhone()" class="form-control input">
+            </label>
+            <label>
+                Post Code:
+                <input type="text" name="inputPostCode" onkeydown="formatPostCode()" class="form-control input">
+            </label>
+            <div class="button-group">
+                <button onclick="" class="btn btn-danger">Cancel</button> 
+                <button onclick="setNext()" class="btn btn-success">Next</button>
+            </div>
+    </fieldset>
+    <fieldset class="form-group container-family" id="containerFamily">
+        <legend >Family Data</legend>
+        
+            <label>
+                Mother's Name:
+                <input type="text" name="inputMothersName" class="form-control input">
+            </label>
+            <label>
+                Father's Name:
+                <input type="text" name="inputFathersName" class="form-control input">
+            </label>
+            <label>
+                Spounse's Name:
+                <input type="text" name="inputSpounsesName" class="form-control input">
+            </label>
+            <label>
+                Children's Name(s):
+                <input type="text" name="inputChildrensName" class="form-control input">
+            </label>
+            <div class="button-group">
+                <button onclick="" class="btn btn-danger">Cancel</button>
+                <button onclick="setNext()" class="btn btn-success">Next</button>
+            </div>
+    </fieldset>
+    <fieldset class="form-group container-prof" id="containerProfessional">
+        <legend>Professional Data</legend>
+     
+            <label >
+                Office:
+                <input type="text" name="inputOffice" class="form-control input">
+            </label>
+            <label>
+                Specialty:
+                <input type="text" name="inputSpecialty" class="form-control input">
+            </label>
+            <label>
+                Register Number:
+                <input type="text" name="inputRegisterNumber" class="form-control input">
+            </label>
+            <label>
+                Council number:
+                <input type="text" name="inputCouncilNumber" class="form-control input">
+            </label>
+            <label>
+                PIS / PASEP:
+                <input type="text" name="inputPisPasep" class="form-control input">
+            </label>
+            <label>
+                Admitional Date:
+                <input type="text" name="inputAdmitionalDate" class="form-control input">
+            </label>
+            <label>
+                Exercise Date:
+                <input type="text" name="inputExerciseDate" class="form-control input">
+            </label>
+            <label>
+                Initial Sector:
+                <input type="text" name="inputInitialSector" class="form-control input">
+            </label>
+            <label>
+                Actual Sector:
+                <input type="text" name="inputActualSector" class="form-control input">
+            </label>
+            <label>
+                Sectors History:
+                <input type="text" name="inputSectorsHistory" class="form-control input">
+            </label>
+            <label>
+                Initial Location:
+                <input type="text" name="inputInitialLocation" class="form-control input">
+            </label>
+            <label>
+                Actual Location:
+                <input type="text" name="inputActualLocation" class="form-control input">
+            </label>
+            <label>
+                Location History:
+                <input type="text" name="inputLocationHistory" class="form-control input">
+            </label>
+            <label>
+                Organ of Origin:
+                <input type="text" name="inputOrganOfOrigin" class="form-control input">
+            </label>
+            <label>
+                Organ In Exercise
+                <input type="text" name="inputOrganInExercise" class="form-control input">
+            </label>
+            <label>
+                Work Schedule:
+                <input type="text" name="inputWorkSchedule" class="form-control input">
+            </label>
+            <label>
+                Change work schedule:
+                <input type="text" name="inputChangeWorkSchedule" class="form-control input">
+            </label>
+            <label>
+                Work Regime:
+                <input type="text" name="inputWorkRegime" class="form-control input">
+            </label>
+            <label>
+                Situation:
+                <input type="text" name="inputSituation" class="form-control input">
+            </label>
+            <label>
+                Resignation Date:
+                <input type="text" name="inputResignationDate" class="form-control input">
+            </label>
+            <div class="button-group">
+                <button onclick="" class="btn btn-danger">Cancel</button>
+                <button class="btn btn-success">Register</button>
+            </div>
+    </fieldset >
+
+</form>
